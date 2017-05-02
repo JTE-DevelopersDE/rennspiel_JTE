@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Klassendiagramm">
+  <ClassDiagramComponents>
+    <Class name="Auto" package="" visibility="public" xPosition="187.0" yPosition="159.0">
+      <Fields>
+        <Field name="geschwindigkeit" type="int" visibility="private"/>
+        <Field name="tank" type="double" visibility="private"/>
+        <Field name="traktion" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="beschleunigen" returnType="void" visibility="public"/>
+        <Method name="bremsen" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Wetter" package="" visibility="public" xPosition="405.0" yPosition="159.0">
+      <Fields>
+        <Field name="wetterarten" type="array" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="setRandomWetter" returnType="void" visibility="public"/>
+        <Method name="getRandomWetter" returnType="int" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
