@@ -2,21 +2,25 @@
 
 <ClassDiagram name="Klassendiagramm">
   <ClassDiagramComponents>
-    <Class name="Auto" package="" visibility="public" xPosition="187.0" yPosition="159.0">
+    <Class name="Auto" package="" visibility="public" xPosition="132.0" yPosition="159.0">
       <Fields>
-        <Field name="geschwindigkeit" type="int" visibility="private"/>
-        <Field name="tank" type="double" visibility="private"/>
-        <Field name="traktion" type="int" visibility="private"/>
+        <Field name="pi_geschwindigkeit" type="int" visibility="private"/>
+        <Field name="pd_tank" type="double" visibility="private"/>
+        <Field name="pi_traktion" type="int" visibility="private"/>
+        <Field name="po_Car" type="JLabel" visibility="private"/>
       </Fields>
       <Constructors/>
       <Methods>
         <Method name="beschleunigen" returnType="void" visibility="public"/>
         <Method name="bremsen" returnType="void" visibility="public"/>
+        <Method name="setObjectTo" returnType="void" visibility="public">
+          <Argument type="JLabel" name="argo_newCar"/>
+        </Method>
       </Methods>
     </Class>
     <Class name="Wetter" package="" visibility="public" xPosition="405.0" yPosition="159.0">
       <Fields>
-        <Field name="wetterarten" type="array" visibility="private"/>
+        <Field name="psa_wetterarten" type="array" visibility="private"/>
       </Fields>
       <Constructors/>
       <Methods>

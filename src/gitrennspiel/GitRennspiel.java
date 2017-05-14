@@ -1,21 +1,23 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package gitrennspiel;
 
+import gitrennspiel.classes.*;
+import javax.swing.*;
+
 /**
- *
- * @author bbsuser
+ * @author schwjo2, johati, cirkei
  */
 public class GitRennspiel {
-
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        Spielfeld lo_Spielfeld = new Spielfeld();
+        
+        JFrame MainWindow = new JFrame();
+        MainWindow.add(lo_Spielfeld);
+              
+        MainWindow.setSize(lo_Spielfeld.getPreferredSize().width , lo_Spielfeld.getPreferredSize().height);
+              
+        MainWindow.setVisible(true);
     }
     
 }
