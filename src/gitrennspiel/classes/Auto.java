@@ -10,10 +10,21 @@ public class Auto {
     private JLabel po_Car;
 
     // ------------------------- M e t h o d e n 
-    public void beschleunigen() {
+    public void setGeschwindigkeit(int ai_NewGeschwindigkeit){
+        this.pi_geschwindigkeit = ai_NewGeschwindigkeit;
     }
-
-    public void bremsen() {
+    
+    public int getGeschwindigkeit(){
+        return this.pi_geschwindigkeit;
+    }
+    
+    public void beschleunigen(int ai_locationX, int ai_locationY) {
+        ai_locationY = ai_locationY + pi_geschwindigkeit;
+        this.po_Car.setLocation(ai_locationX , ai_locationY);
+    }
+    
+    public void bremsen(int ai_wettereinfluss) {
+        this.pi_geschwindigkeit = this.pi_geschwindigkeit - ai_wettereinfluss;
     }
 
     public void setObjectTo(JLabel argo_newCar) {
